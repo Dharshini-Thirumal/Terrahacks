@@ -1,0 +1,9 @@
+<form [formGroup]="progressForm" (ngSubmit)="onSubmit()">
+    <label for="progress">Progress:</label>
+    <input type="number" id="progress" formControlName="progress">
+    <button type="submit" [disabled]="progressForm.invalid">Submit</button>
+</form>
+
+<div *ngIf="progressForm?.get('progress')?.value">
+    Progress: {{ progressForm.get('progress')?.value }}%
+</div>

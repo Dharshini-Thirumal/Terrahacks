@@ -1,0 +1,32 @@
+header {
+    background-color: #333; 
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .app-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff69b4; 
+    margin-right: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    margin: 0 10px;
+    color: #fff; 
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ffc5c5; 
+  }
+  
+  .nav-links a.router-link-active {
+    background-color: #ffa7a7; 
+  }
